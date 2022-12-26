@@ -1,0 +1,111 @@
+.home {
+    width: 90%;
+    margin: 0 auto; 
+}
+
+.home .titulo-de-seccion {
+    margin: 25px 0;
+    color: var(--gris-oscuro);
+    text-align: center;
+}
+
+.home .contenedor-articulo .contenedor-tarjetas {
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.home .contenedor-articulo .contenedor-tarjetas .tarjetas {
+    margin-bottom: 10px;
+}
+
+.home .contenedor-articulo .contenedor-tarjetas .tarjetas .contenido {
+    border-top: 1px solid var(--gris-claro);
+    padding: 15px;
+    position: relative;
+}
+
+.home .contenedor-articulo .contenedor-tarjetas .camion {
+    border: 1px solid var(--verde);
+    border-radius: 50%;
+    width: fit-content;
+    padding: 5px;
+    position: absolute;
+    top: -15px;
+    right: 20px;
+}
+
+.home .contenedor-articulo .contenedor-tarjetas .camion i {
+    color: var(--verde);
+    font-size: 16px;
+}
+
+.home .contenedor-articulo .contenedor-tarjetas .camion i:hover{
+    transform: rotate(-90deg);
+    transition: 1.2s ;
+}
+
+.home .contenedor-articulo .contenedor-tarjetas .informacion {
+    display: flex;
+    padding-top: 5px;
+}
+
+.home .contenedor-articulo .contenedor-tarjetas .informacion .precio{
+    flex-grow: 0.05;
+}
+
+.home .contenedor-articulo .contenedor-tarjetas .informacion .descuento{
+    color: var(--verde);
+    font-size: 14px; 
+}
+
+.home .contenedor-articulo .contenedor-tarjetas .nombre {
+    color: var(--gris-oscuro);
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+@media (max-width:461px) {
+    nav {
+        display:none;
+    }
+
+    .home  {
+        width: 90%;
+    }
+
+    .home article {
+        padding-top:30px 0 ;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .home article img {
+        width: 100%;
+    }
+
+    .home article .nombre{
+        display: none;
+    }
+
+    .home article .precio {
+        font-size: 14px;
+    }
+
+    .home article .descuento {
+        font-size: 10px;
+        margin-left: 20px; 
+    }
+
+    .home .contenedor-articulo .contenedor-tarjetas .tarjetas {
+        box-shadow: none;
+    }
+}
+@media (min-width:462px) {
+    .home .contenedor-articulo .contenedor-tarjetas .tarjetas {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .menu-hamburguesa {
+        display: none;
+    }
+}

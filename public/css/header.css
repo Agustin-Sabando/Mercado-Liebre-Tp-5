@@ -1,0 +1,74 @@
+header {
+    background-color: var(--amarillo);
+    font-size: var(--parrafo);
+    padding-bottom: 10px;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header .contenedor-logo {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+}
+
+header .contenedor-logo .logo {
+    margin-top: -20px;
+    width: 30%;
+    padding-top: 25px;
+}
+
+header .contenedor-logo .logo_img{
+    margin-top: 20px;
+}
+
+header .contenedor-logo .formulario{
+    margin-top: 20px;
+}
+
+header .contenedor .contenedor-logo .formulario .input {
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+}
+
+header .contenedor .contenedor-logo .formulario .boton{
+    margin-left: -20px;
+    color: gray;
+    background: white;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+}
+
+header .contenedor .contenedor-logo #search-bar {
+    display: flex;
+    margin-left: 5px; 
+}
+
+header .contenedor .cuota {
+    text-align: center;
+    margin: 20px 0 20px;
+}
+
+header .menu-hamburguesa {
+    background-color: var(--celeste);
+    color: #fff;
+    width: 32px;
+    padding: 6px;
+    font-size: 15px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px auto 0;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+header nav ul#top {
+    margin-bottom: 25px;
+}
