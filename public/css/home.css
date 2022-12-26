@@ -1,3 +1,7 @@
+nav {
+    display:none;
+}
+
 .home {
     width: 90%;
     margin: 0 auto; 
@@ -10,7 +14,6 @@
 }
 
 .home .contenedor-articulo .contenedor-tarjetas {
-    background-color: white;
     margin-bottom: 10px;
 }
 
@@ -62,29 +65,20 @@
     color: var(--gris-oscuro);
     font-size: 15px;
     margin-top: 15px;
+    display: none;
 }
 
-@media (max-width:461px) {
-    nav {
-        display:none;
-    }
+.tarjetas {
+    background-color: white;
+}
 
+@media (min-width:461px) {
     .home  {
         width: 90%;
     }
 
-    .home article {
-        padding-top:30px 0 ;
-        display: flex;
-        justify-content: space-between;
-    }
-
     .home article img {
         width: 100%;
-    }
-
-    .home article .nombre{
-        display: none;
     }
 
     .home article .precio {
@@ -96,13 +90,76 @@
         margin-left: 20px; 
     }
 
-    .home .contenedor-articulo .contenedor-tarjetas .tarjetas {
-        box-shadow: none;
+   .contenedor-tarjetas{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .tarjetas {
+        width: 45%;
+    }
+
+    .home .contenedor-articulo .contenedor-tarjetas .nombre {
+        color: var(--gris-oscuro);
+        font-size: 15px;
+        margin-top: 15px;
+        display: flex;
     }
 }
-@media (min-width:462px) {
+
+@media (min-width:769px) {
+    .nombre {
+        display: none;
+    }
+    
+    .contenedor {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor-tarjetas {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .tarjetas {
+        width: 23%;
+    }
+
+    .navegacion {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 40px;
+        align-items: flex-end;
+    }
+
+    .navegacion ul {
+        display: flex;
+        width: 30%;
+        justify-content: space-evenly;
+    }
+
+    .navegacion ul#top {
+        margin-bottom: 0;
+    }
+
     .home .contenedor-articulo .contenedor-tarjetas .tarjetas {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .home .contenedor-articulo .contenedor-tarjetas .nombre {
+        color: var(--gris-oscuro);
+        font-size: 15px;
+        margin-top: 15px;
+        display: flex;
     }
 
     .menu-hamburguesa {
