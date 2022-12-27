@@ -7,5 +7,8 @@ app.use(express.static(path.resolve(__dirname,'public')));
 
 app.get('/',(req, res) => res.sendFile(path.resolve(__dirname,'views', 'home.html')));
 
+app.get('/register', (req,res)=>{res.sendFile(path.join(__dirname, "views", "register.html"))})
 
-app.listen(port, () => console.log(`Se levanto con exito el servidor en http://localhost:${port}`));
+app.get('/login', (req,res)=>{res.sendFile(path.join(__dirname, "views", "login.html"))})
+
+app.listen(port, () => console.log(`Servidor levantado en http://localhost:${port}`));
